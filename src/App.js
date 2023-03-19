@@ -1,6 +1,9 @@
+import ObjectModify from "./components/ObjectModify";
+
 function App() {
   return (
-    <p>Olá mundo!</p>
+    // Alteração de atributo dentro do objeto
+    <ObjectModify/>
   );
 }
 

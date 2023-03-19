@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "./Button"
 
 export default function ObjectModify() {
 
@@ -19,6 +20,7 @@ export default function ObjectModify() {
       <div className="message">
         <label>{msg.content}</label>
       </div>
+      <Button primary>Enviar</Button>
       <br/>
       <br/>
       <input

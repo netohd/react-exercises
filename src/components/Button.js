@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Button = styled.button`
+const ButtonStyle = styled.button`
   background: transparent;
   border-radius: 3px;
   border: 2px solid ${props => props.theme.main};
@@ -14,10 +14,30 @@ const Button = styled.button`
   `}
 `
 
-Button.defaultProps = {
+ButtonStyle.defaultProps = {
   theme: {
     main: 'palevioletred',
   }
+}
+
+function Button(props) {
+// Declarar a função da forma abaixo dá na mesma, estaria desconstruindo
+// o objeto que vem nas propriedades
+
+//function Button({ onClick, disabled, text }) {
+
+  const handleClick = () => {
+    alert(props)
+  }
+  
+  return (
+    <ButtonStyle
+      onClick={handleClick}
+      disabled={props.disabled}
+    >
+      {props.text}
+    </ButtonStyle>
+  )
 }
 
 export default Button;

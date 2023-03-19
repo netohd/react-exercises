@@ -17,7 +17,8 @@ export default function ObjectModify() {
   const handleChange = (e) => {
     setMsg({ ...msg, content: e.target.value })
   }
-  
+
+
   return (
     <>
       <p>{msg.title}</p>
@@ -25,7 +26,11 @@ export default function ObjectModify() {
       <div className="message">
         <label>{msg.content}</label>
       </div>
-      <Button theme={lime}>Enviar</Button>
+      <Button 
+        theme={lime} 
+        text="Teste"
+        //onClick={handleClick}
+      />
       <br/>
       <br/>
       <input

@@ -10,9 +10,7 @@ export default function ObjectModify() {
   }
 
   const lime = {
-    theme: {
-      main: "mediumseagreen",
-    }
+    main: "mediumseagreen",
   }
 
   const [msg, setMsg] = useState(initialState)

@@ -9,10 +9,17 @@ export default function ObjectModify() {
     author: 'Antonio Almeida'
   }
 
+  const lime = {
+    theme: {
+      main: "mediumseagreen",
+    }
+  }
+
   const [msg, setMsg] = useState(initialState)
   const handleChange = (e) => {
     setMsg({ ...msg, content: e.target.value })
   }
+  
   return (
     <>
       <p>{msg.title}</p>
@@ -20,7 +27,7 @@ export default function ObjectModify() {
       <div className="message">
         <label>{msg.content}</label>
       </div>
-      <Button primary>Enviar</Button>
+      <Button theme={lime}>Enviar</Button>
       <br/>
       <br/>
       <input

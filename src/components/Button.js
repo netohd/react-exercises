@@ -21,7 +21,7 @@ ButtonStyle.defaultProps = {
 }
 
 function Button(props) {
-// Declarar a função da forma abaixo dá na mesma, estaria desconstruindo
+// Declarar a função da forma abaixo seria igual, estaria desconstruindo
 // o objeto que vem nas propriedades
 
 //function Button({ onClick, disabled, text }) {

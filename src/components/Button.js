@@ -14,6 +14,7 @@ const ButtonStyle = styled.button`
   `}
 `
 
+// Se as definições não forem passadas
 ButtonStyle.defaultProps = {
   theme: {
     main: 'palevioletred',
